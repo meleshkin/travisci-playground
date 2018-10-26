@@ -50,7 +50,7 @@ public class TravisciPlaygroundApplicationTests {
 							Locale locale = Locale.forLanguageTag("en");
 							DateTimeFormatter dateTimeFormatter =  DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT).withLocale(locale);
 							LocalDateTime b =  LocalDateTime.parse(content, dateTimeFormatter);
-							Assert.assertTrue(a.isBefore(b));
+							Assert.assertTrue(b.isBefore(a));
 						}
 				);
 
